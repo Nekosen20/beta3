@@ -215,7 +215,7 @@ h4 {
   flex-direction: column;
   gap: 15px;
 }
-
+/*seccion para dar en adopcion */
 #adopcion input[type="text"],
 #adopcion input[type="number"],
 #adopcion input[type="file"],
