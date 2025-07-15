@@ -1,3 +1,4 @@
+
 function abrirFormulario(nombre) {
   document.getElementById("modal").style.display = "block";
   document.getElementById("animalNombre").textContent = nombre;
