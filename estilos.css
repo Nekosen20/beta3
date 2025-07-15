@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8; 
+    color: #333; 
+}
+
+header {
+    background-color: #6B8E23; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+/*diseño del menu*/
+nav {
+    background-color: #A0522D; 
+    overflow: auto;
+}
+
+nav a {
+    float: left;
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #CD7F32; 
+}
+/*diseño del contenedor*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #6B8E23; 
+    margin-top: 40px;
+}
+/* diseño de las cartas*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #F5DEB3; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/*diseño de los botones para la dopcion*/
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #A0522D; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #CD7F32; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #FFFFFF; 
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+/*diseño par el cerrado de imagene*/
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #A0522D; 
+}
+
+.modal form input,
+.modal form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal form input[type="submit"] {
+    background-color: #A0522D; 
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* diseño del pie de pagina*/
+footer {
+    background-color: #6B8E23; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+/*diseño para el logo*/
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+/*diseño para las imagenes*/
+#imgModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 60px;
+}
+
+#imgModal .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+}
+
+section {
+    display: none;
+}
+
+section.activa {
+    display: block;
+}
+/*letra y color del h4*/
+h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/*seccion de adopcion*/
+#adopcion {
+  padding: 40px 20px;
+  background-color: #fefefe;
+  border-top: 2px solid #ccc;
+}
+
+#adopcion h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #333;
+}
+
+#adopcion .card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#adopcion form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#adopcion input[type="text"],
+#adopcion input[type="number"],
+#adopcion input[type="file"],
+#adopcion input[type="email"],
+#adopcion textarea,
+#adopcion select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#adopcion textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+#adopcion input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#adopcion input[type="submit"]:hover {
+  background-color: #45a049;
+}
