@@ -23,8 +23,8 @@
   <a href="#perros" onclick="mostrarSeccion('perros')">Perros</a>
   <a href="#gatos" onclick="mostrarSeccion('gatos')">Gatos</a>
   <a href="#otros" onclick="mostrarSeccion('otros')">Otros</a>
-  <a href="#dar en adopcion" onclick="mostrarSeccion('adopcion')">adopción</a>  
-  <a href="#reflexion" onclick="mostrarSeccion('reflexion')">Reflexión</a>
+  <a href="#dar en adopcion" onclick="mostrarSeccion('adopcion')">Dar en adopción</a>  
+  <a href="#caso" onclick="mostrarSeccion('caso')">Casos exitosos</a>
   <a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a>
   <a href="#desarrolladores" onclick="mostrarSeccion('desarrolladores')">Desarrolladores</a>
   
@@ -89,7 +89,7 @@
     <form id="formAdopcion" onsubmit="publicarAnimal(event)">  <!-- para publicar animales dentro de la pagina web--><!-- el onsubmit es para enviar el formulario-->
       <input type="text" name="nombre" placeholder="Nombre del animal" required>
       <select name="tipo" required>
-        <option value="">Tipo de animal</option>
+        <option value="">Tipo de animal</option><!-- value es para que salga ese valor solo hay 3 opccciones-->
         <option value="perros">Perro</option>
         <option value="gatos">Gato</option>
         <option value="otros">Otro</option>
@@ -97,15 +97,15 @@
       <input type="number" name="edad" placeholder="Edad (en años)" min="0" required>
       <textarea name="descripcion" placeholder="Descripción del animal" required></textarea>
       <input type="text" name="contacto" placeholder="Tu número o correo" required>
-      <input type="file" name="imagen" accept="image/*" required>
+      <input type="file" name="imagen" accept="image/*" required><!-- solo permite qe ingrese imagenes -->
       <input type="submit" value="Publicar Animal">
     </form>
   </div>
 </section>
-    <section id="reflexion">
-      <h2>💚 Reflexión</h2>
+    <section id="caso">
+      <h2>💚 Casos exitosos</h2>
       <div class="card">
-        <p>“Cada animal que espera un hogar tiene una historia, un corazón lleno de esperanza y un deseo inmenso de encontrar su familia para siempre. Al elegir la adopción, no solo salvas una vida, sino que descubres un amor incondicional que transformará la tuya.Ellos te esperan.”</p>
+        <p>en esta seccion se pondra los casos exitoso de adopcion para motivar a la gente a que sigan adoptando </p>
         <p><strong>Haz la diferencia. Adopta, no compres.</strong></p>
       </div>
     </section>
@@ -125,7 +125,7 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="cerrarModal()">&times;</span>
-      <h3>Formulario de Adopción: <span id="animalNombre"></span></h3>
+      <h3>Formulario de Adopción: <span id="animalNombre"></span></h3><!-- span es para que alinee los textos -->
       <form onsubmit="enviarFormulario(event)"><!-- para enviar el formulario-->
         <input type="hidden" id="animal" name="animal">
         <input type="text" placeholder="Tu nombre" required>
